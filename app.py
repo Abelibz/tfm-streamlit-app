@@ -1052,9 +1052,9 @@ with tab8:
         
         ### 🧩 Fases principales
         
-        **1️⃣ Ingeniería de datos aplicada a proyecto de Ciencia **  
+        **1️⃣ Ingeniería de datos aplicada a proyecto de Ciencia de Datos**  
         Integración de datos sociodemográficos y urbanos del **Ayuntamiento de Barcelona**, junto con datos del mercado inmobiliario obtenidos mediante la **API de Idealista**.  
-        El proceso incluye ** normalización y agregación** a nivel de distrito para construir conjuntos de datos válidos para análisis y modelado.
+        El proceso incluye **normalización y agregación** a nivel de distrito para construir conjuntos de datos válidos para análisis y modelado.
         
         **2️⃣ Análisis exploratorio (EDA)**  
         Limpieza de datos, estudio de distribuciones, detección de *outliers* y análisis de correlaciones para identificar los principales factores que influyen en el precio de la vivienda.  
@@ -1107,3 +1107,4 @@ with tab8:
             """, height=180)
 
     st.caption("Si redistribuyes esta aplicación o utilizas sus figuras, por favor cita al autor y enlaza a la licencia CC BY 4.0.")
+
