@@ -793,7 +793,7 @@ with tab6:
     st.title("🤖 Modelos y métricas")
 
     # =========================
-    # A) IMPORTANCIA VARIABLES
+    # IMPORTANCIA VARIABLES
     # =========================
     st.subheader("Importancia de variables (CatBoost)")
 
@@ -859,7 +859,7 @@ with tab6:
     st.divider()
 
     # =========================
-    # B) RMSE POR TRAMOS
+    # RMSE POR TRAMOS
     # =========================
     st.subheader("RMSE por tramos (CatBoost vs XGBoost)")
 
@@ -886,7 +886,7 @@ with tab7:
     if "pred_history" not in st.session_state:
         st.session_state["pred_history"] = []
 
-    # 1. Columnas según el entrenamiento
+    # Columnas según el entrenamiento
     FEATURES = [
         "floor", "propertyType", "size", "rooms", "bathrooms",
         "district", "neighborhood", "latitude", "longitude",
@@ -990,7 +990,7 @@ with tab7:
     else:
         hist_df = pd.DataFrame(st.session_state["pred_history"])
 
-        # Botón de descarga en la segunda columna de la cabecera
+        # Botón de descarga
         with col_btn_dl:
             csv = hist_df.to_csv(index=False).encode("utf-8-sig")
             st.download_button(
@@ -1002,7 +1002,7 @@ with tab7:
                 key="header_dl"
             )
 
-        # Botón de borrar en la tercera columna de la cabecera
+        # Botón de borrar
         with col_btn_clr:
             if st.button("🗑️ Borrar", use_container_width=True, key="header_clr"):
                 st.session_state["pred_history"] = []
@@ -1107,4 +1107,5 @@ with tab8:
             """, height=180)
 
     st.caption("Si redistribuyes esta aplicación o utilizas sus figuras, por favor cita al autor y enlaza a la licencia CC BY 4.0.")
+
 
