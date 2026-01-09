@@ -9,7 +9,7 @@ perspectiva **objetiva y basada en datos**, integrando información urbana, soci
 
 ---
 
-## 🚀 Aplicacióm (Streamlit Cloud)
+## 🚀 Aplicación (Streamlit Cloud)
 
 - **App:** https://tfm-abel-mora-vazquez.streamlit.app/
 
