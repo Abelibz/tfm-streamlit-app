@@ -539,6 +539,15 @@ with tab1:
             st.dataframe(rowp, use_container_width=True)
         else:
             st.info("No hay perfil_niveles para ese distrito.")
+    # ✅ Debajo de TODO lo anterior (siempre)
+    st.divider()
+    st.subheader("🌳 Estructura / Jerarquía (Flourish)")
+
+    flourish_hierarchy = """
+<div class="flourish-embed flourish-hierarchy" data-src="visualisation/27190574"></div>
+<script src="https://public.flourish.studio/resources/embed.js"></script>
+"""
+    components.html(flourish_hierarchy, height=900, scrolling=False)
 
 # -------------------------
 # TAB 2: MAPA
@@ -1107,5 +1116,6 @@ with tab8:
             """, height=180)
 
     st.caption("Si redistribuyes esta aplicación o utilizas sus figuras, por favor cita al autor y enlaza a la licencia CC BY 4.0.")
+
 
 
