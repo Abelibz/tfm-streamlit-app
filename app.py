@@ -541,7 +541,7 @@ with tab1:
             st.info("No hay perfil_niveles para ese distrito.")
     # ✅ Debajo de TODO lo anterior (siempre)
     st.divider()
-    st.subheader("🌳 Estructura / Jerarquía (Flourish)")
+    st.subheader("🌳 Valoraciones y Calidad de Vida")
 
     flourish_hierarchy = """
 <div class="flourish-embed flourish-hierarchy" data-src="visualisation/27190574"></div>
@@ -1116,6 +1116,7 @@ with tab8:
             """, height=180)
 
     st.caption("Si redistribuyes esta aplicación o utilizas sus figuras, por favor cita al autor y enlaza a la licencia CC BY 4.0.")
+
 
 
 
